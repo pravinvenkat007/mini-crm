@@ -33,9 +33,14 @@ Login:
 
 ## Authorization Logic
 
+  email-admin@example.com
+  password-password123
+
 - All CRM APIs require a valid JWT access token in `Authorization: Bearer <token>`.
 - `protect` middleware verifies the token and attaches the active user to `req.user`.
 - Leads are soft deleted with `isDeleted: true`; normal list/detail queries filter them out.
 - Task status updates are restricted to the assigned user. Admin users can update any task for operational oversight.
+
+
 
 
