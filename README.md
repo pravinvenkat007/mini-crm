@@ -38,7 +38,4 @@ Login:
 - Leads are soft deleted with `isDeleted: true`; normal list/detail queries filter them out.
 - Task status updates are restricted to the assigned user. Admin users can update any task for operational oversight.
 
-## Deployment Notes
 
-- Deploy `client` to Netlify/Vercel with `VITE_API_URL` pointing to the backend URL.
-- Deploy `server` to Render/Railway/Fly with `MONGO_URI`, `JWT_SECRET`, and `CLIENT_URL` configured.
